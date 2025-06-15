@@ -146,9 +146,9 @@ public:
   static void set_green() { set_color(LEDColorGreen()); }
   static void set_white() { set_color(LEDColorWhite()); }
 
-  #if ENABLED(LED_COLOR_PRESETS)
     static const LEDColor defaultLEDColor;
     static void set_default()  { set_color(defaultLEDColor); }
+  #if ENABLED(LED_COLOR_PRESETS)
     static void set_red()      { set_color(LEDColorRed()); }
     static void set_orange()   { set_color(LEDColorOrange()); }
     static void set_yellow()   { set_color(LEDColorYellow()); }
