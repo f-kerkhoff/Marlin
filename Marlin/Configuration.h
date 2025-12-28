@@ -1517,7 +1517,7 @@
  *     O-- FRONT --+
  */
 // fk: BLTouch auf der Rückseite des Schlittens
-#define NOZZLE_TO_PROBE_OFFSET { 25, 53, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { 18, 56, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1732,13 +1732,12 @@
 #define Y_BED_SIZE 220
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
-// fk: Werte für X- und Y-Riemenspanner und Schnellwechselkopf
-#define X_MIN_POS -38
-#define Y_MIN_POS -28
+#define X_MIN_POS -33
+#define Y_MIN_POS -9
 #define Z_MIN_POS 0
-#define X_MAX_POS (X_BED_SIZE - 22)
-#define Y_MAX_POS (Y_BED_SIZE - 26)
-#define Z_MAX_POS 240
+#define X_MAX_POS (X_BED_SIZE - 4)
+#define Y_MAX_POS (Y_BED_SIZE - 2)
+#define Z_MAX_POS 200
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
 //#define J_MIN_POS 0
